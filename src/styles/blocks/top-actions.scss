@@ -1,0 +1,54 @@
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  margin-bottom: 50px;
+
+  @include onTablet {
+    height: 77px;
+    margin-bottom: 30px;
+  }
+
+  @include onDesktop {
+    height: 90px;
+    margin-bottom: 90px;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @include onPhoneMax {
+      gap: 0;
+    }
+  }
+
+  &--menu {
+    margin-bottom: 10px;
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__wrapper--menu {
+    direction: rtl;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include onTablet {
+      direction: ltr;
+    }
+  }
+}

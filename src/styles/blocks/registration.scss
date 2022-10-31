@@ -1,0 +1,70 @@
+.registration {
+  background-color: $c-background;
+  margin-bottom: 90px;
+
+  @include onTablet {
+	margin-bottom: 120px;
+  }
+
+  @include onDesktop {
+	background-image: url(/images/pictures/img_07.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	margin-bottom: 110px;
+  }
+ 
+
+  &__container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	@include onTablet {
+	  padding-top: 80px;
+	  padding-bottom: 80px;
+	}
+
+	@include onDesktop {
+	  padding-top: 205px;
+	  padding-bottom: 205px;
+	}
+  }
+
+  &__title {
+	font-family: $f-Playfair-Display;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 100%;
+	color: $c-white;
+	margin-bottom: 20px;
+
+	@include onTablet {
+	  font-size: 62px;
+	  line-height: 100%;
+	  margin-bottom: 10px;
+	}
+
+	@include onDesktop {
+	  font-size: 80px;
+
+	}
+  }
+
+  &__under {
+	font-family: $f-Raleway;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $c-white;
+	margin-bottom: 40px;
+
+	@include onDesktop {
+	  margin-bottom: 50px;
+	}
+
+	@include onTablet {
+	  margin-bottom: 60px;
+	  width: 450px;
+	}
+  }
+
+}

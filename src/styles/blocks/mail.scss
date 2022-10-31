@@ -1,0 +1,81 @@
+.mail {
+  margin-bottom: 80px;
+
+	@include onTablet {
+	  margin-bottom: 128px;
+	}
+
+	@include onDesktop {
+	  margin-bottom: 200px;
+	}
+
+  &__title {
+	font-family: $f-Playfair-Display;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 125%;
+	color: $c-black;
+	margin-bottom: 20px;
+
+	@include onTablet {
+	  font-size: 40px;
+	  width: 690px;
+	}
+
+	@include onDesktop {
+	  font-size: 48px;
+	  line-height: 120%;
+	  margin-bottom: 50px;
+	  width: 570px;
+	}
+  }
+
+  &__content {
+	font-family: $f-Raleway;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $c-black;
+	margin-bottom: 50px;
+
+	@include onTablet {
+	  width: 570px;
+	}
+  }
+
+  &__form {
+	margin-bottom: 30px;
+	
+	&--input {
+	  width: 100%;
+	  border: none;
+	  border-bottom: 1px solid #1c1b29;
+	  outline: none;
+
+	  &:hover {
+		border-bottom: 1px solid #CD4D31;
+		&::placeholder {
+		  color: #CD4D31;
+		}
+	  }
+
+	  &::placeholder {
+		font-family: $f-Raleway;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: $c-black;
+	  }
+
+	  @include onTablet {
+		width: 450px;
+	  }
+
+	  
+	}
+
+	@include onDesktop {
+	  margin-bottom: 40px;
+	}
+  }
+}

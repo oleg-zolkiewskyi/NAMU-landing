@@ -1,0 +1,98 @@
+.button {
+  text-decoration: none;
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color: #cd4d31;
+    border: #cd4d31;
+	  font-family: $f-Raleway;
+    color: $c-white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: #AF3419;
+    }
+
+    &:visited {
+      background-color: #EA340D;
+    }
+
+    &:disabled {
+      background-color: #DD836F;
+    }
+
+    
+    @include onTablet {
+      width: 330px;
+    }
+
+    @include onDesktop {
+      width: 270px;
+    }
+  }
+
+  &--actual {
+    width: 100%;
+  }
+  
+  &__secondary {
+    display: none;
+    transition: all 0.5s;
+    font-family: $f-Raleway;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    @include onTablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 210px;
+      height: 60px;
+      color: $c-main;
+      border: 1px solid $c-main;
+      background-color: transparent;
+
+      @include onDesktop {
+        width: 270px;
+      }
+    }
+
+    &--img {
+      width: 20px;
+      height: 20px;
+      background-image: url(/images/arrows/arrow-right.svg);
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    &--mobile {
+     
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      width: 100%;
+      height: 60px;
+      color: $c-main;
+      border: 1px solid $c-main;
+      margin-top: 30px;
+
+      @include onTablet {
+        display: none;
+      }
+    
+    }
+  }
+}

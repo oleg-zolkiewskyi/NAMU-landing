@@ -1,0 +1,150 @@
+.footer {
+  background-color: $c-background;
+
+  &__title {
+	font-family: $f-Playfair-Display;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 150%;
+	color: $c-white;
+
+	margin-bottom: 10px;
+
+	@include onTablet {
+	  font-size: 20px;
+	  margin-bottom: 30px;
+	}
+  }
+
+  &__contacts {
+	padding-top: 34px;
+	margin-bottom: 50px;
+
+	@include onTablet {
+	  margin-top: 16px;
+	  margin-bottom: 62px;
+	}
+  }
+
+  &__text {
+    font-family: $f-Raleway;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $c-white;
+	text-decoration: none;
+
+	margin-bottom: 30px;
+
+	@include onTablet {
+	  margin-bottom: 50px;
+	}
+  }
+
+  &__icons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+  }
+
+  &__shedule {
+	margin-bottom: 50px;
+
+	@include onTablet {
+	  margin-top: 50px;
+	  margin-bottom: 110px;
+	}
+
+    &--title {
+	  font-family: $f-Playfair-Display;
+	  font-weight: 700;
+	  font-size: 18px;
+	  line-height: 150%;
+	  color: $c-white;
+
+	  margin-bottom: 10px;
+
+	  @include onTablet {
+		font-size: 20px;
+		margin-bottom: 30px;
+	  }
+
+	}
+
+	&--main {
+	  font-family: $f-Raleway;
+	  font-weight: 400;
+	  font-size: 16px;
+	  line-height: 150%;
+	  color: $c-white;
+	  
+	 
+	}
+  }
+
+  &__main {
+	margin-bottom: 60px;
+
+	@include onTablet {
+	  margin-top: 50px;
+	}
+
+	&--title {
+	  font-family: $f-Playfair-Display;
+	  font-weight: 700;
+	  font-size: 20px;
+	  line-height: 150%;
+	  color: $c-white;
+
+	  margin-bottom: 10px;
+
+	  @include onDesktop {
+		margin-bottom: 30px;
+	  }
+	}
+
+	&--naw {
+
+	  &-link {
+	   font-family: $f-Raleway;
+	   font-weight: 400;
+	   font-size: 16px;
+	   line-height: 150%;
+	   color: $c-white;
+	   text-decoration: none;
+	   padding-bottom: 10px;
+	   
+	  }
+	}
+
+  }
+
+  &__bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 30px;
+	
+	&--wrap {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  gap: 22px;
+
+	  @include onTablet {
+		gap: 102px;
+	  }
+
+	  &-term {
+		font-family: $f-Raleway;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		color: $c-white;
+	  }
+	}
+	
+  }
+}

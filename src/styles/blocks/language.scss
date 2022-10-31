@@ -1,0 +1,32 @@
+.language {
+
+  &__select {
+    background-color: transparent;
+    color: $c-white;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    height: 24px;
+    border: none;
+
+    @include onPhoneMax {
+      display: none;
+    }
+    
+    
+  }
+
+  &__menu--select {
+    background-color: transparent;
+    color: $c-white;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    height: 24px;
+    border: none;
+  }
+}

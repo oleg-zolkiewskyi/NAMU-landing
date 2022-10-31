@@ -1,0 +1,39 @@
+.about {
+
+  &__date {
+	font-family: $f-Raleway;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $c-main;
+	margin-bottom: 10px;
+  }
+
+  &__name {
+	font-family: $f-Playfair-Display;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 125%;
+	color: $c-black;
+	margin-bottom: 20px;
+
+  }
+
+  &__abouts {
+	font-family: $f-Raleway;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $c-gray;
+	margin-bottom: 30px;
+
+	
+	@include onTablet {
+	  margin-bottom: 40px;
+	}
+
+    @include onDesktop {
+	  margin-bottom: 50px;
+	}
+  }
+}

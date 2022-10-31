@@ -1,0 +1,69 @@
+.page {
+  font-family: $f-Raleway, $f-Playfair-Display;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 150%;
+
+  transition: transform 0.5s;
+  scroll-behavior: smooth;
+
+  &__body {
+	  margin: 0;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 60px;
+
+    @include onTablet {
+      margin-bottom: 75px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 70px;
+    }
+
+    &--news {
+      @include onDesktop {
+        margin-bottom: 55px;
+      }
+    }
+
+	  &--title {
+      font-family: $f-Playfair-Display;
+	    font-weight: 700;
+	    font-size: 28px;
+	    line-height: 125%;
+	    color: $c-black;
+
+      @include onTablet{
+        font-size: 40px;
+        line-height: 125%;
+      }
+
+      @include onDesktop{
+        font-size: 48px;
+        line-height: 120%;
+      }
+	  }
+
+  }
+
+ &__menu:target {
+  transform: translateX(0);
+  z-index: 1;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(200%);
+    transition: transform 0.5s;
+  }
+}
